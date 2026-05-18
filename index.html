@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotea Sabin PFA - Acasa</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="main-navbar">
+        <div class="nav-logo">
+            <img src="imagini/logo.png" alt="Logo Hotea Sabin PFA">
+            <div>
+                <a href="index.html" class="logo-title">Hotea Sabin</a>
+                <span class="logo-subtitle">PFA Constructii</span>
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li>
+                <a href="#acasa" class="active" data-section="acasa" onclick="countControl('Meniu Acasa')">Acasa</a>
+            </li>
+
+            <li class="dropdown-custom">
+                <a href="#servicii" data-section="servicii" onclick="countControl('Meniu Servicii')">Servicii</a>
+                <ul class="dropdown-list">
+                    <li><a href="rezervare.html?lucrare=Constructie%20casa">Constructii case</a></li>
+                    <li><a href="rezervare.html?lucrare=Acoperis">Acoperisuri</a></li>
+                    <li><a href="rezervare.html?lucrare=Turnare%20placa%20beton">Turnare placi</a></li>
+                    <li><a href="rezervare.html?lucrare=Izolatie%20termica">Izolatii termice</a></li>
+                    <li><a href="rezervare.html?lucrare=Gard">Garduri</a></li>
+                    <li><a href="rezervare.html?lucrare=Cerere%20speciala">Cereri speciale</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#cum-functioneaza" data-section="cum-functioneaza" onclick="countControl('Meniu Cum functioneaza')">Cum functioneaza</a>
+            </li>
+
+            <li>
+                <a href="proiecte.html" onclick="countControl('Meniu Proiecte')">Proiecte</a>
+            </li>
+
+            <li>
+                <a href="rezervare.html" onclick="countControl('Meniu Rezervare')">Rezervare</a>
+            </li>
+
+            <li>
+                <a href="contact.html" onclick="countControl('Meniu Contact')">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header id="acasa" class="hero-home">
+        <div class="hero-overlay">
+            <h1>Construim si renovam cu seriozitate</h1>
+            <p>Case, acoperisuri, placi beton, izolatii termice, garduri si cereri speciale.</p>
+            <a href="rezervare.html" class="btn-main" onclick="countControl('Buton solicita oferta')">
+                Solicita oferta
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section id="servicii" class="container section-space">
+            <div class="section-title">
+                <span>Servicii</span>
+                <h2>Ce lucrari realizam</h2>
+                <p>Oferim servicii pentru constructii si amenajari, adaptate in functie de cererea clientului.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-box">
+                    <h3>Constructii case</h3>
+                    <p>Executam lucrari pentru case la rosu, case parter sau case etajate.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Acoperisuri</h3>
+                    <p>Realizam structuri, montaj si reparatii pentru acoperisuri.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Turnare placi</h3>
+                    <p>Turnam placi din beton pentru fundatii, case si alte constructii.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Izolatii termice</h3>
+                    <p>Executam lucrari de izolare pentru confort si eficienta energetica.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Garduri</h3>
+                    <p>Construim garduri si imprejmuiri pentru locuinte si terenuri.</p>
+                </div>
+
+                <div class="service-box">
+                    <h3>Cereri speciale</h3>
+                    <p>Analizam si lucrari personalizate, in functie de nevoile clientului.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cum-functioneaza" class="info-section">
+            <div class="container">
+                <div class="section-title light">
+                    <span>Proces</span>
+                    <h2>Cum functioneaza?</h2>
+                    <p>Clientul trimite detaliile lucrarii, iar firma analizeaza cererea si revine cu o oferta.</p>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-box">
+                        <span>1</span>
+                        <h3>Trimiti cererea</h3>
+                        <p>Completezi formularul cu tipul lucrarii, locatia, bugetul si detaliile importante.</p>
+                    </div>
+
+                    <div class="step-box">
+                        <span>2</span>
+                        <h3>Analizam proiectul</h3>
+                        <p>Se verifica informatiile, pozele, plansele sau cerintele speciale.</p>
+                    </div>
+
+                    <div class="step-box">
+                        <span>3</span>
+                        <h3>Primiti oferta</h3>
+                        <p>Firma contacteaza clientul pentru discutii si pentru stabilirea detaliilor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container section-space">
+            <div class="offer-info">
+                <h2>Ca sa putem realiza o oferta de pret detaliata, avem nevoie sa ne trimiteti:</h2>
+
+                <h4>Plansele de arhitectura</h4>
+                <p>Din aceste documente trebuie sa reiasa clar grosimea peretilor, compartimentarea casei si cotele de elevatie.</p>
+
+                <h4>Alte detalii utile</h4>
+                <ul>
+                    <li>Unde va fi construita casa?</li>
+                    <li>Cand doriti sa inceapa lucrarea?</li>
+                    <li>Aveti deja autorizatia de constructie eliberata?</li>
+                    <li>Orice alte informatii considerate relevante.</li>
+                </ul>
+
+                <h4>Plansele de rezistenta</h4>
+                <p>Aceste planse prezinta structura de rezistenta si fundatia impreuna cu stalpii si centurile.</p>
+
+                <a href="rezervare.html" class="btn-main" onclick="countControl('Buton oferta personalizata')">
+                    Solicita o oferta personalizata
+                </a>
+            </div>
+        </section>
+
+        <section class="home-customize-section">
+            <div class="container">
+                <div class="section-title light">
+                    <span>Personalizare</span>
+                    <h2>Schimba aspectul site-ului</h2>
+                    <p>Alege rapid fundalul, culoarea textului si marimea textului.</p>
+                </div>
+
+                <div class="home-theme-grid">
+                    <div class="home-theme-card">
+                        <div class="home-theme-icon">Fundal</div>
+
+                        <h3>Schimba fundalul</h3>
+                        <p>Alege culoarea de fundal pentru paginile site-ului.</p>
+
+                        <div class="theme-control-line">
+                            <input 
+                                type="color" 
+                                id="bgColor" 
+                                value="#f6f6f6"
+                                class="theme-circle-color"
+                                oninput="updateColorLabel('bgColor', 'bgColorValue')"
+                                onfocus="countControl('Selector culoare fundal')"
+                            >
+
+                            <div class="theme-color-bar">
+                                <span id="bgColorValue">#f6f6f6</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-theme-card">
+                        <div class="home-theme-icon">Text</div>
+
+                        <h3>Text si marime</h3>
+                        <p>Alege culoarea textului si dimensiunea generala.</p>
+
+                        <div class="theme-control-line">
+                            <input 
+                                type="color" 
+                                id="textColor" 
+                                value="#222222"
+                                class="theme-circle-color"
+                                oninput="updateColorLabel('textColor', 'textColorValue')"
+                                onfocus="countControl('Selector culoare text')"
+                            >
+
+                            <div class="theme-color-bar">
+                                <span id="textColorValue">#222222</span>
+                            </div>
+                        </div>
+
+                        <div class="theme-size-box">
+                            <label>Marime text</label>
+                            <div class="theme-select-wrap">
+                                <select id="fontSize" onfocus="countControl('Selector marime text')">
+                                    <option value="16px">Normal</option>
+                                    <option value="18px">Mediu</option>
+                                    <option value="20px">Mare</option>
+                                </select>
+                                <span>›</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-home-actions">
+                    <button type="button" onclick="applyTheme(); countControl('Buton aplica tema')" class="btn-main">
+                        Aplica tema
+                    </button>
+
+                    <button type="button" onclick="resetTheme(); countControl('Buton reset tema')" class="theme-reset-home">
+                        Reseteaza tema
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="stats-box">
+                <div class="stats-header">
+                    <h4>Statistici interactiuni</h4>
+
+                    <button type="button" onclick="resetStats()" class="stats-reset-btn">
+                        Reseteaza statistici
+                    </button>
+                </div>
+
+                <div id="stats"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Hotea Sabin PFA - Site proiect PIUG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
